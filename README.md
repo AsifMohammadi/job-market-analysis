@@ -22,4 +22,20 @@ Key Findings
 Engineering roles appeared most frequently.
 Analytics roles emphasized SQL and Python.
 Engineering roles showed higher demand for AWS.
+
+How to Run
+Install dependencies:
+pip install -r requirements.txt
+
+Run the data pipeline:
+python src/collect.py
+python src/transform.py
+python src/enrich.py
+python src/load_db.py
+
+Open the analysis notebook:
+notebooks/job_market_sql_analysis.ipynb
+
+Run all cells to view SQL results and visualizations.
+
 Data Source: Remote OK public job feed (job URLs preserved for attribution).
